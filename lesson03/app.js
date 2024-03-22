@@ -26,7 +26,7 @@ console.log(serviceSecond);
 let servicePriceSecond = +prompt ('Сколько это будет стоить?')
 console.log(servicePriceSecond);
 
-const fullPrice = screenPrice + servicePriceSecond + serviceSecond  
+const fullPrice = screenPrice + servicePriceSecond + servicePrice  
 console.log(fullPrice);
 
 let percentageResult = +(fullPrice * (percentage / 100))
