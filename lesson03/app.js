@@ -1,14 +1,9 @@
-// let servicePriceSecond = 10000
-// let titleProject = 'оценка стоимости'
-// let screensValue = 'шаблонные,с анимациями, с уникальным дизайном'
-// let screenPrice = 50000
-// let percentage = 100
-// let fullPrice = 40000
-// let responsive = true
 
 
-let screenPrice = 10000
-let percentage = 10
+
+const screenPrice = 10000
+const percentage = 10
+
 
 let titleProject = prompt ('Название проекта?')
 console.log(titleProject);
@@ -28,7 +23,10 @@ console.log(servicePrice);
 let serviceSecond = prompt ('Какой дополнительный сервис нужен?')
 console.log(serviceSecond);
 
-let fullPrice = screenPrice + servicePriceSecond + serviceSecond  
+let servicePriceSecond = +prompt ('Сколько это будет стоить?')
+console.log(servicePriceSecond);
+
+const fullPrice = screenPrice + servicePriceSecond + serviceSecond  
 console.log(fullPrice);
 
 let percentageResult = +(fullPrice * (percentage / 100))
